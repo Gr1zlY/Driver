@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>English Speaking Driver</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+                <link rel="stylesheet" type="text/css" href="js/smoothness/jquery-ui-1.8.11.custom.css"/>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.corners.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.11.custom.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+               $("p.order, .order-submit").corner("8px");
+               $("#order-date").datepicker();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="header">
+                <div id="logo">
+                    <h1>English Speaking Driver</h1>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Order car</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div id="content">
+                <h3>Contacts</h3>
+                <div class="fl">
+                    <img src="images/me.jpg"/>
+                </div>
+                <div class="fl contacts">
+                    <ul class="contacts-data">
+                        <li>
+                            <a class="link-skype" href="skype:okspen?call">khromenko</a>
+                        </li>
+                        <li><a class="link-email" href="mailto:khromenko@i.ua">khromenko@i.ua</a></li>
+                        <li class="link-phone">+38(091) 123-45-67</li>
+                    </ul>                    
+                    <form class="contact-form" method="POST">
+                    <fieldset>
+                        <table><tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td><label for="contacts-name">Name:</label></td>
+                                        <td><input type="text" id="contacts-name" required="required"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="contacts-email">Email:</label></td>
+                                        <td><input type="text" id="contacts-email" required="required"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="contacts-message">Message:</label></td>
+                                        <td colspan="2"><textarea cols="10" rows="5" id="contacts-message" required="required"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td><td><input type="submit" class="order-submit" value="Send"/></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr></table>
+                    </fieldset>
+                    </form>
+                </div>
+                <div class="cb"></div>
+            </div>
+            <div id="footer">
+                <p class="copyright">&copy; 2011 &laquo;English Speaking Driver&raquo;</p>
+                <p class="contacts">
+                    <a href="mailto:khromenko@i.ua">khromenko@i.ua</a>, <a href="mailto:khromenko@mail.ru">khromenko@mail.ru</a><br/>
+                    (044) 360-38-00<br/>
+                    skype: khromenko
+                </p>
+            </div>
+        </div>
+        <div id="bg-top"></div>
+    </body>
+</html>

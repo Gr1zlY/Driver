@@ -1,0 +1,368 @@
+@import url(reset.css) screen;
+
+/* common */
+
+body {
+    background: #336541;
+    color: #fafafa;
+    font-family: Georgia, Times, serif;
+}
+
+a:link, a:visited {
+    color:#fafafa;
+}
+
+#wrap {
+    margin:0 auto;
+    padding: 50px 10px 0;
+    width: 900px;
+}
+
+#header, #content {
+    margin-bottom: 35px;
+}
+
+/* background */
+
+#bg-top {
+    background: url(images/bg_gradient.png) repeat-x;
+    height: 600px;
+    position: absolute;
+    top: 0px;
+}
+
+#bg-top, #bg-bottom {
+    width:100%;
+    z-index: -1;
+}
+
+/* footer styles */
+
+#footer {
+    font-size:18px;
+    height: 80px;
+    padding-bottom:35px;
+    line-height: 24px;
+}
+
+#footer a {
+    outline: none;
+}
+
+.copyright {
+    float:left;
+}
+
+.copyright img {
+    margin: 10px 0 0 20px;
+}
+
+.contacts {
+    float:right;
+}
+
+/* header styles */
+
+#header {
+    overflow: visible;
+}
+
+h1 {
+    font-size: 48px;
+    font-style: italic;
+}
+
+#logo {
+    float: left;
+    width: 560px;
+}
+
+#logo a {
+    outline: none;
+}
+
+#logo img {
+    border: none;
+}
+
+#menu {
+    float: right;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+#menu li {
+    float: left;
+    margin-right: 45px;
+    position: relative;
+    z-index: 100;
+}
+
+#menu li:last-child {
+    margin-right: 0;
+}
+
+#menu li a {
+    font-size:22px;
+    font-style: italic;
+    position: relative;
+    z-index: 100;
+}
+
+#menu li:hover a {
+    color: #e3cf38;
+}
+
+/* content styles */
+#content {
+    font-size: 16px;
+}
+
+.info {
+    font-size: 20px;
+    line-height: 22px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#content h2, #content h3 {
+    font-style: italic;
+    margin: 10px auto 15px;
+}
+
+#content h2 {
+    color: #ffb400;
+    font-size: 22px;
+    line-height: 24px;
+}
+
+#content h3 {
+    color: #e3cf38;
+    font-size: 22px;
+    padding-bottom: 10px;
+    border-bottom: 4px dotted #e3cf38;
+}
+
+.car-list td {
+    vertical-align: top;
+}
+
+.car-list li {
+    margin-bottom: 15px;
+}
+
+.small-img {
+    width: 180px;
+}
+
+.car-desc {
+    padding-left: 15px;
+    width: 100%;
+}
+
+.car-desc h4, .car-desc p {
+    margin-bottom: 10px;
+}
+
+.car-desc h4 {
+    color: #e3cf38;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.car-desc p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+p.price {
+    color: #e3cf38;
+    font-size: 24px;
+}
+
+p.order a {
+    display: block;
+    color: #336541;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+p.order  {
+    background: #E3CF38;
+    border: 4px solid #e3cf38;
+    color: #e3cf38;
+    float: right;
+    padding: 5px;
+    text-align: center;
+    width: 75px;
+}
+
+form td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.order-form {
+    width: 820px;
+    margin: 0 auto;
+}
+
+.order-form td {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.order-form input[type=text] {
+    font-family: inherit;
+    font-size: 18px;
+    margin: 0 3px;
+    width: 250px;
+}
+
+.order-form textarea {
+    width: 270px;
+    margin: 0 3px;
+}
+
+.order-form .error {
+    border: 4px solid #dd6666;
+}
+
+.error-list {
+    color: #FC7474;
+    list-style-type: disc;
+    margin-left: 10px;
+}
+
+.error-list li {
+    line-height: 22px;
+}
+
+.order-submit {
+    background: #e3cf38;
+    border: 4px solid #e3cf38;
+    color: #336541;
+    font-family: inherit;
+    font-size: 18px;
+    float: right;
+    margin-top: 5px;
+    width: 85px;
+    height: 35px;
+}
+
+#order-cellcode {
+    width: 35px;
+}
+
+#order-cellcountrycode {
+    width: 25px;
+}
+
+#order-cellphone {
+    width: 130px;
+}
+
+#order-date {
+    width: 150px;
+}
+#order-time {
+    width: 70px;
+}
+
+#order-flight {
+    width: 270px;
+}
+
+/* contacts styles */
+
+.contacts {
+    margin-left: 30px;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form td {
+    vertical-align: top;
+}
+
+.contact-form textarea, .contact-form input[type=text] {
+    font-family: inherit;
+    font-size: 16px;
+    margin: 0 3px;
+    padding: 4px;
+    width: 300px;
+}
+
+.contact-form textarea {
+    border: 1px solid #F0F0F0;
+}
+
+.contact-form label {
+    color: #e3cf38;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.contacts-data {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.contacts-data li {
+    margin-left: 60px;
+}
+
+.link-skype, .link-email, .link-phone {
+    padding-left: 30px;
+}
+
+.link-skype {
+    background: url(images/skype.png) no-repeat;
+}
+
+.link-email {
+    background: url(images/email.png) no-repeat;
+}
+
+.link-phone {
+    background: url(images/phone.png) no-repeat left center;
+}
+
+/* pagination styles */
+
+.navigation {    
+    font-size: 20px;
+    margin-left: 40%;
+}
+
+.navigation li {
+    float: left;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.navigation li:hover {
+    background: #5783af;
+}
+
+.navigation li.current {
+    background: #112233;
+    color: #ffb400;
+}
+
+.fl {
+    display: block;
+    float: left;
+}
+
+.fr {
+    display: block;
+    float: right;
+}
+
+.cb {
+    clear: both;
+}
